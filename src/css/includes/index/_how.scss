@@ -1,0 +1,268 @@
+.how {
+  margin-bottom: 85px;
+}
+
+.how__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1132px;
+  margin: 0 auto;
+}
+
+.how__03 {
+  width: 43%;
+  p {
+    margin-bottom: 10px;
+    padding-left: 36px;
+    line-height: 1.5;
+  }
+}
+
+.how__03-title {
+  margin-bottom: 42px;
+  span {
+    top: 12px;
+    left: 2px;
+  }
+}
+
+.how__video {
+  position: relative;
+  width: 49.25%;
+  margin-bottom: 60px;
+  padding-top: 22px;
+  text-align: center;
+  a {
+
+    img {
+      margin-bottom: 26px;
+      padding-right: 15px;
+    }
+  }
+  &::after {
+    content: url("../img/svg/how-line-1.svg");
+    position: absolute;
+    bottom: -66px;
+    left: 103px;
+  }
+}
+
+.how__video-title {
+  margin-bottom: 5px;
+  padding-right: 23px;
+  font-size: 20px;
+  font-weight: 700;
+  color: $red-700;
+  line-height: 1;
+  text-align: right;
+}
+
+.how__video-link-wrap {
+  text-align: right;
+}
+
+.how__video-link {
+  margin-right: 82px;
+  color: #6c757d;
+  &:hover {
+    color: $red-400;
+  }
+}
+
+.how__main {
+  position: relative;
+  width: 31.2%;
+  margin-left: 10px;
+  padding: 34px 60px 68px 74px;
+  border: 1px solid #c6cbcf;
+  border-radius: 15px 110px;
+  background: $white;
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.how__main-title {
+  margin-bottom: 17px;
+  font-family: $Philosopher;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $red-700;
+  letter-spacing: 0.035em;
+}
+
+.how__main-img {
+  position: absolute;
+  top: -95px;
+  right: -52px;
+  width: 185px;
+}
+
+.how__tech {
+  position: relative;
+  width: 26.7%;
+  margin-right: 22px;
+  padding: 33px 110px 68px 74px;
+  border: 1px solid #c6cbcf;
+  border-radius: 15px 110px;
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    span {
+      font-weight: 700;
+    }
+  }
+  &::after {
+    content: url("../img/svg/how-line-2.svg");
+    position: absolute;
+    top: 58px;
+    left: -124px;
+    z-index: -1;
+  }
+}
+
+.how__tech-title {
+  margin-bottom: 18px;
+  font-family: $Philosopher;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $red-700;
+  letter-spacing: 0.035em;
+}
+
+@media (max-width: 1023px) {
+
+  .how {
+
+    .container {
+      padding: 0 10px;
+    }
+  }
+
+  .how__wrap {
+    flex-direction: column;
+  }
+
+  .how__03,
+  .how__video,
+  .how__main,
+  .how__tech {
+    width: auto;
+  }
+
+  .how__03 {
+
+    p {
+      padding-left: 1px;
+    }
+  }
+
+  .how__03-title {
+    margin-bottom: 28px;
+    padding-left: 1px;
+  }
+
+  .how__video {
+    margin-bottom: 70px;
+    padding-top: 42px;
+    text-align: center;
+    a {
+      img {
+        margin-bottom: 8px;
+        padding-right: 0;
+      }
+    }
+    &::after {
+      content: url("../img/svg/how-line-1-mobile.svg");
+      bottom: -76px;
+      left: 50%;
+    }
+  }
+
+  .how__video-title {
+    padding-right: 11px;
+  }
+
+  .how__video-link {
+    margin-right: 69px;
+  }
+
+  .how__main {
+    margin-left: 1px;
+    margin-right: 2px;
+    margin-bottom: 76px;
+    padding: 56px 20px 66px 18px;
+  }
+
+  .how__main-img {
+    width: 133px;
+    top: -68px;
+    right: 2px;
+  }
+
+  .how__main-title {
+    margin-bottom: 12px;
+  }
+
+  .how__tech {
+    margin-right: 0;
+    padding: 53px 61px 64px 20px;
+    &::after {
+      content: url("../img/svg/how-line-2-mobile.svg");
+      width: auto;
+      top: -78px;
+      left: 114px;
+    }
+  }
+
+  .how__tech-title {
+    margin-bottom: 19px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .how__video {
+
+    &::after {
+      left: 200px;
+    }
+  }
+
+  .how__video-title {
+    text-align: right;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .how__video {
+
+    &::after {
+      left: 88px;
+    }
+  }
+
+  .how__video-title {
+    text-align: right;
+  }
+
+}
+
+@media (max-width: 374px) {
+
+  .how__video {
+
+    &::after  {
+      left: 44px;
+    }
+  }
+
+}

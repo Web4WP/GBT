@@ -1,0 +1,138 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 7px 0;
+  background: $white;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.09);
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header__logo {
+  margin-right: 69px;
+  line-height: 1;
+  img {
+    height: 51px;
+  }
+}
+
+.header__nav {
+  margin: 13px 0;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #e5e5e5;
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      margin-right: 46px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        padding-bottom: 9px;
+        font-size: 14px;
+        letter-spacing: -1px;
+        border-bottom: 1px solid #e5e5e5;
+        span {
+          font-weight: 700;
+        }
+        &:hover {
+          color: $red-400;
+          border-color: $red-400;
+        }
+      }
+    }
+    li.active {
+      a {
+        border-color: $red-400;
+      }
+    }
+  }
+}
+
+.header__search {
+  margin-left: auto;
+  padding-left: 25px;
+  align-self: center;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: $red-400;
+  background: url("../img/svg/search.svg") left center no-repeat;
+  background-size: 15px 15px;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 1279px) {
+
+  .header__logo {
+    margin-right: 50px;
+  }
+
+  .header__nav {
+
+    ul {
+      li {
+        margin-right: 35px;
+      }
+    }
+  }
+
+  .header__search {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .header {
+    padding: 3px 0 4px;
+  }
+
+  .header__wrap {
+    align-items: center;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__logo {
+    margin-right: 0;
+    img {
+      height: 35px;
+    }
+  }
+
+  .header__search {
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 24px;
+    font-size: 14px;
+    background-position: right center;
+  }
+
+  .header__burger {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../img/svg/burger.svg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .header__burger.open {
+    background: url("../img/svg/close.svg") center center no-repeat;
+  }
+
+}

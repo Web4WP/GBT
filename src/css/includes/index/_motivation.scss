@@ -1,0 +1,117 @@
+.motivation {
+  position: relative;
+  margin-bottom: 110px;
+  padding-bottom: 93px;
+  overflow: hidden;
+  p {
+    margin-bottom: 10px;
+    padding-left: 36px;
+    line-height: 1.5;
+    span {
+      font-weight: 700;
+    }
+    a {
+      color: #ff5050;
+      text-decoration: underline;
+      &:hover {
+        color: $default-color;
+      }
+    }
+  }
+}
+
+.motivation__wrap {
+  position: relative;
+  max-width: 480px;
+  margin-left: 139px;
+  padding-top: 195px;
+  z-index: 100;
+}
+
+.motivation__name {
+  margin-bottom: 16px;
+  padding-left: 34px;
+}
+
+.motivation__title {
+  margin-bottom: 23px;
+  line-height: 1.2;
+}
+
+
+.motivation__img {
+  position: absolute;
+  top: -127px;
+  right: 269px;
+  max-width: 970px;
+}
+
+@media (max-width: 1900px) {
+
+  .motivation__img {
+    right: 48px;
+  }
+
+}
+
+@media (max-width: 1279px) {
+
+  .motivation__wrap {
+    margin-left: 50px;
+    padding-top: 75px;
+  }
+
+  .motivation__img {
+    max-width: 600px;
+    top: -65px;
+    right: 0;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .motivation {
+    margin-bottom: 5px;
+    .container {
+      padding: 0 10px;
+    }
+    p {
+      padding-left: 1px;
+    }
+  }
+
+  .motivation__wrap {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 38px;
+    padding-top: 7px;
+  }
+
+  .motivation__name {
+    margin-bottom: 18px;
+    padding-left: 1px;
+  }
+
+  .motivation__title {
+    margin-bottom: 28px;
+    padding-left: 1px;
+  }
+
+  .motivation__img {
+    position: static;
+    display: block;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .motivation__img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+}

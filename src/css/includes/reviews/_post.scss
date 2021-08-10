@@ -1,0 +1,208 @@
+.post {
+  margin-bottom: 86px;
+}
+
+.post__wrap {
+  position: relative;
+}
+
+.post__carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 151px;
+}
+
+.post__item {
+  width: 41.5%;
+  margin-bottom: 29px;
+  padding: 29px 40px 30px 41px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  &:first-child {
+    height: 352px;
+  }
+  &:nth-child(2) {
+    min-height: 414px;
+  }
+  &:nth-child(3) {
+    min-height: 197px;
+    margin-top: -61px;
+  }
+  &:nth-child(4) {
+    min-height: 363px;
+  }
+  &:nth-child(5) {
+    min-height: 140px;
+    margin-top: -226px;
+  }
+  &:nth-child(6) {
+    min-height: 258px;
+  }
+  &:nth-child(7) {
+    min-height: 219px;
+    margin-top: -343px;
+  }
+  &:nth-child(9) {
+    min-height: 288px;
+    margin-top: -123px;
+  }
+  &_empty {
+    background: transparent;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+
+.post__item-name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.post__item-city {
+  margin-bottom: 25px;
+  color: #6c757d;
+}
+
+.post__choice {
+  position: absolute;
+  bottom: 43px;
+  right: 147px;
+  padding: 41px 119px 54px 102px;
+  text-align: center;
+  border-radius: 15px 110px 15px 110px;
+  border: 1px solid #c6cbcf;
+  &::before {
+    content: url("../img/svg/reviews-line.svg");
+    position: absolute;
+    top: -42px;
+    left: 231px;
+  }
+}
+
+.post__choice-title {
+  margin-bottom: 32px;
+  font-family: $Philosopher;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  span {
+    color: $red-700;
+  }
+}
+
+.post__choice-btn {
+  max-width: 296px;
+}
+
+.post__nav-count {
+  display: none;
+}
+
+@media (max-width: 1439px) {
+
+  .post__item {
+    width: 40%;
+  }
+
+  .post__choice {
+    bottom: 47px;
+    padding: 41px 70px 54px 70px;
+  }
+
+}
+
+@media (max-width: 1365px) {
+
+  .post__choice {
+    bottom: 70px;
+  }
+
+}
+
+@media (max-width: 1279px) {
+
+  .post__carousel {
+    padding: 0;
+  }
+
+  .post__choice {
+    bottom: 48px;
+    right: 24px;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .post {
+    margin-bottom: 80px;
+    .container {
+      padding: 0 10px;
+    }
+  }
+
+  .post__wrap {
+    position: relative;
+  }
+
+  .post__carousel {
+    .post__item {
+      width: auto;
+      height: auto;
+      margin-bottom: 0;
+      padding: 29px 19px 56px 42px;
+    }
+    .owl-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 31px;
+      margin-bottom: 46px;
+    }
+  }
+
+  .post__nav-count {
+    position: absolute;
+    bottom: 345px;
+    left: 50%;
+    display: block;
+    font-size: 12px;
+    color: #a6abbd;
+    transform: translateX(-50%);
+    span {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ff5050;
+    }
+  }
+
+  .post__choice {
+    position: static;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 69px 62px 68px;
+    &::before {
+      display: none;
+    }
+  }
+
+  .post__choice-title {
+    margin-bottom: 28px;
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .post__choice {
+    max-width: 100%;
+  }
+
+}
+

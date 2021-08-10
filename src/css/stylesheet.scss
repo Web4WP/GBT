@@ -11,6 +11,18 @@
 @import "common/header";
 @import "common/footer";
 
+/* Includes - Index */
+@import "reuse/menu";
 
 /* Includes - Index */
-@import "includes/index/block";
+@import "includes/index/banner";
+@import "includes/index/about";
+@import "includes/index/original";
+@import "includes/index/how";
+@import "includes/index/motivation";
+@import "includes/index/map";
+
+/* Includes - Reviews */
+@import "includes/reviews/share";
+@import "includes/reviews/video";
+@import "includes/reviews/post";

@@ -1,0 +1,99 @@
+.original {
+  margin-bottom: 61px;
+  padding: 40px 0 34px;
+  color: $white;
+  background-color: $red-400;
+  overflow: hidden;
+}
+
+.original__wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-left: 134px;
+  &::before {
+    content: url("../img/svg/original-cross.svg");
+    position: absolute;
+    left: 256px;
+    top: 8px;
+  }
+  &::after {
+    content: url("../img/svg/original-ellipse.svg");
+    position: absolute;
+    left: 137px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.original__title {
+  max-width: 760px;
+  margin: 0 auto;
+  font-family: $Philosopher;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.014em;
+}
+
+@media (max-width: 1439px) {
+
+  .original__wrap {
+    &::before {
+      left: 120px;
+    }
+    &::after {
+      left: 0;
+    }
+  }
+
+}
+
+@media (max-width: 1279px) {
+
+  .original__wrap {
+    &::before {
+      top: 50%;
+      left: 130px;
+      transform: translateY(-50%);
+    }
+    &::after {
+      top: 43px;
+      left: 15px;
+    }
+  }
+
+  .original__title {
+    max-width: 600px;
+    font-size: 30px;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .original {
+    margin-bottom: 46px;
+    padding: 46px 0 32px;
+  }
+
+  .original__wrap {
+    padding-left: 109px;
+    &::before {
+      top: 50%;
+      left: -4px;
+      transform: translateY(-50%);
+    }
+    &::after {
+      top: 43px;
+      left: 15px;
+    }
+  }
+
+  .original__title {
+    font-size: 20px;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+  }
+
+}

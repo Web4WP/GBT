@@ -8,8 +8,9 @@ const imgMin = require('./gulp/image');
 const svgSprite = require('./gulp/svg');
 const fonts = require('./gulp/fonts');
 const copyCSS = require('./gulp/copyCssLib');
+const copyFiles = require('./gulp/copyFiles');
 const copyJS = require('./gulp/copyJsLib');
 const del = require('./gulp/del');
 
-module.exports.build = gulp.series(del, fonts, pug2Html, scss2Css, imgMin, svgSprite, copyCSS, copyJS);
-module.exports.start = gulp.series(del, fonts,  pug2Html, scss2Css, imgMin, svgSprite, copyCSS, copyJS, serve);
+module.exports.build = gulp.series(del, fonts, pug2Html, scss2Css, imgMin, svgSprite, copyCSS, copyFiles, copyJS);
+module.exports.start = gulp.series(del, fonts,  pug2Html, scss2Css, imgMin, svgSprite, copyCSS, copyJS, copyFiles, serve);

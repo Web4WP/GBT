@@ -1,0 +1,134 @@
+.video {
+  position: relative;
+  margin-bottom: 114px;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.video__title {
+  margin-bottom: 25px;
+  font-family: $Philosopher;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: $red-700;
+  letter-spacing: 0.015em;
+}
+
+.video__text {
+  position: relative;
+  max-width: 310px;
+  margin: 0 auto 29px;
+  padding-bottom: 47px;
+  line-height: 1.5;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 17px;
+    background: $red-700;
+    transform: translateX(-50%);
+  }
+}
+
+.video__wrap {
+
+}
+
+.video__carousel {
+  padding-left: 4px;
+}
+
+.video__item {
+  .video__item-link {
+    img {
+      max-width: 430px;
+    }
+  }
+}
+
+.video__item-link {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.video__item-name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.video__item-city {
+  color: #6c757d;
+}
+
+.video__nav-count {
+  display: none;
+}
+
+@media (max-width: 1279px) {
+
+
+
+}
+
+@media (max-width: 1023px) {
+
+  .video {
+    margin-bottom: 65px;
+    .container {
+      padding: 0 10px;
+    }
+  }
+
+  .video__title {
+    margin-bottom: 17px;
+    font-size: 20px;
+  }
+
+  .video__text {
+    padding-bottom: 57px;
+  }
+
+  .video__carousel {
+    padding-left: 0;
+    .owl-nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 5px;
+    }
+  }
+
+  .video__item-link {
+    margin-bottom: 15px;
+  }
+
+  .video__item-city {
+    margin-bottom: 16px;
+  }
+
+  .video__nav-count {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    display: block;
+    font-size: 12px;
+    color: #a6abbd;
+    transform: translateX(-50%);
+    span {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ff5050;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+
+
+
+}

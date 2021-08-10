@@ -1,7 +1,12 @@
 $Roboto: "Roboto", Arial, Helvetica, sans-serif;
-$fz-16: 16px;
+$Inter: "Inter", Arial, Helvetica, sans-serif;
+$Philosopher: "Philosopher", Arial, Helvetica, sans-serif;
+$default-font-size: 16px;
+$default-color: #343a40;
 $white: #ffffff;
 $black: #000000;
+$red-400: #e20000;
+$red-700: #c60000;
 
 html, body, h1, h2, h3, h4, h5, h6, p, button, ul, ol {
   margin: 0;
@@ -13,12 +18,12 @@ ul, ol {
 }
 
 body {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: $fz-16;
+  font-family: $Inter;
+  font-size: $default-font-size;
   font-weight: 400;
   font-style: normal;
   line-height: 1.375;
-  color: $black;
+  color: $default-color;
   background: $white;
 }
 
@@ -68,6 +73,15 @@ label {
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
+}
+
+main {
+  padding-top: 70px;
+}
+
+main.open {
+  display: none;
 }
 
 .container {
@@ -76,10 +90,128 @@ img {
   margin: 0 auto;
 }
 
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 13px 0 11px;
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+  border: 1px solid #fa6f6f;
+  border-radius: 50px;
+  background: linear-gradient(97.31deg, #ff5050 1.35%, #fc2a2a 23.96%, #ff5050 38.22%, rgba(255, 0, 61, 0) 115.43%), #c60000;
+  box-shadow: 0 3px 10px rgba(255, 68, 68, 0.54);
+  transition: all 0.2s linear;
+  text-align: center;
+  &:hover {
+    color: $red-400;
+    background: $white;
+    border-color: $red-400;
+  }
+}
+
+.block-name {
+  position: relative;
+  margin-bottom: 13px;
+  padding-left: 36px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #6c757d;
+  letter-spacing: 0.27em;
+  line-height: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 17px;
+    height: 1px;
+    background: $red-400;
+    transform: translateY(-50%);
+  }
+}
+
+.block-title {
+  position: relative;
+  margin-bottom: 35px;
+  padding-left: 36px;
+  font-family: $Philosopher;
+  font-size: 30px;
+  line-height: 1;
+  color: $red-700;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  span {
+    position: absolute;
+    top: 14px;
+    left: 1px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #6c757d;
+    letter-spacing: 0.27em;
+  }
+}
+
+::-webkit-scrollbar-button {
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 0
+}
+
+::-webkit-scrollbar-track {
+  background-color: $white;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0;
+  border-radius: 5px;
+  background-color: #ff5050;
+  box-shadow: 0 3px 10px rgba(255, 68, 68, 0.54);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #ff5050;
+}
+
+::-webkit-resizer {
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+@media (max-width: 1023px) {
+
+  main {
+    padding-top: 44px;
+  }
+
+  .block-name {
+    margin-bottom: 18px;
+    padding-left: 0;
+    &:before {
+      display: none;
+    }
+  }
+
+  .block-title {
+    margin-bottom: 28px;
+    padding-left: 0;
+    line-height: 1.2;
+    span {
+      display: none;
+    }
+  }
+
+}
+
 @media (min-width: 1000px) {
 
   .container {
-    max-width: 1170px;
+    max-width: 1410px;
   }
 
 }

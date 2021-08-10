@@ -1,0 +1,164 @@
+.about {
+  margin-bottom: 49px;
+}
+
+.about__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  img {
+    height: 360px;
+    margin-right: 101px;
+  }
+  p {
+    color: #343a40;
+  }
+}
+
+.about__text {
+  width: 351px;
+  margin-left: 185px;
+  margin-bottom: 15px;
+  padding-top: 72px;
+  p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+}
+
+.about__01 {
+  position: relative;
+  width: 463px;
+  margin-left: 149px;
+  padding-top: 106px;
+  p {
+    padding-left: 36px;
+    line-height: 1.5;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.about__02 {
+  width: 370px;
+  margin-right: 49px;
+  p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    a {
+      font-weight: 700;
+      color: #ff5050;
+      text-decoration: underline;
+      &:hover {
+        color: $default-color;
+      }
+    }
+  }
+}
+
+.about__02-title {
+  margin-bottom: 34px;
+}
+
+@media (max-width: 1439px) {
+
+  .about__wrap {
+
+    img {
+      margin-right: 0
+    }
+  }
+
+  .about__text {
+    margin-left: 100px;
+  }
+
+  .about__01 {
+    margin-left: 65px;
+  }
+
+}
+
+@media (max-width: 1279px) {
+
+  .about__wrap {
+
+    img {
+      width: 60%;
+      height: 100%;
+    }
+  }
+
+  .about__text {
+    margin-left: 0;
+  }
+
+  .about__01 {
+    margin-left: 0;
+  }
+
+  .about__02 {
+    margin-right: 0;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .about {
+    margin-bottom: 44px;
+    .container {
+      padding: 0 11px;
+    }
+  }
+
+  .about__wrap {
+    flex-direction: column;
+    img {
+      width: 338px;
+      height: auto;
+      margin: 0 auto 1px;
+      padding-left: 11px;
+      order: 3;
+    }
+  }
+
+  .about__text {
+    width: 100%;
+    padding-top: 15px;
+    order: 1;
+    p {
+      padding-right: 15px;
+    }
+  }
+
+  .about__01 {
+    width: auto;
+    margin-bottom: 8px;
+    padding-top: 22px;
+    order: 2;
+    p {
+      padding-left: 0;
+    }
+  }
+
+  .about__02 {
+    width: auto;
+    order: 4;
+    p {
+      padding-right: 20px;
+    }
+  }
+
+  .about__02-name {
+    margin-bottom: 17px;
+  }
+
+  .about__02-title {
+    margin-bottom: 29px;
+  }
+
+}

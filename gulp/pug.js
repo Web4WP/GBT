@@ -8,7 +8,7 @@ module.exports = function pugToHtml() {
   return gulp.src("src/pug/pages/*.pug")
     .pipe(plumber())
     .pipe(pug({ pretty:true }))
-    .pipe(htmlValidator())
+    //.pipe(htmlValidator())
     .pipe(bemValidator())
     .pipe(gulp.dest("build"))
 }
