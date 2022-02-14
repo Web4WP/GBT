@@ -1,0 +1,106 @@
+.bio {
+  padding-bottom: 79px;
+  background: #f7f7f7;
+}
+
+.bio__wrap {
+  max-width: 1017px;
+  margin: 0 auto;
+}
+
+.bio__title {
+  margin-bottom: 28px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.bio__text {
+  position: relative;
+  margin-bottom: 35px;
+  padding-bottom: 53px;
+  text-align: center;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 30px;
+    background: $red-400;
+    transform: translateX(-50%);
+  }
+}
+
+.bio__carousel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+
+.bio__item {
+  width: 30%;
+  text-align: center;
+  p {
+    margin-bottom: 10px;
+    padding-right: 45px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+  }
+}
+
+.bio__item-img {
+  margin-bottom: 24px;
+}
+
+.bio__item-title {
+  margin-bottom: 25px;
+  padding-bottom: 27px;
+  font-family: $Philosopher;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.041em;
+  border-bottom: 1px solid $red-700;
+  text-align: center;
+}
+
+.bio__clinic {
+  display: block;
+  max-width: 296px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1279px) {
+
+
+}
+
+@media (max-width: 1023px) {
+
+  .bio__item {
+    width: auto;
+  }
+
+  .bio__title {
+    font-size: 20px;
+  }
+
+  .bio__text {
+    &:after {
+      content: url("../img/svg/drag.svg");
+      left: 50%;
+      bottom: 20px;
+      width: auto;
+      height: 0;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+
+
+}

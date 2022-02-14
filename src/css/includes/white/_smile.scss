@@ -1,0 +1,265 @@
+.smile {
+  position: relative;
+  padding-top: 102px;
+}
+
+.smile__wrap {
+  position: relative;
+  margin-bottom: 167px;
+  z-index: 1000;
+}
+
+.smile__block {
+  max-width: 530px;
+  margin-left: 141px;
+  p {
+    max-width: 315px;
+    padding-left: 36px;
+    line-height: 1.5;
+    span {
+      font-weight: 700;
+    }
+  }
+  img {
+    position: absolute;
+    top: -109px;
+    right: 22px;
+    z-index: -1;
+  }
+  .smile__leaf-1 {
+    top: -26px;
+    right: 127px;
+  }
+
+  .smile__leaf-2 {
+    top: 103px;
+    right: 92px;
+  }
+
+  .smile__leaf-3 {
+    top: 412px;
+    left: 81px;
+  }
+}
+
+.smile__name {
+  margin-bottom: 34px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.smile__title {
+  margin-bottom: 32px;
+  font-size: 48px;
+  line-height: 1.21;
+  letter-spacing: 0.025em;
+}
+
+.smile__add {
+  max-width: 477px;
+  margin-bottom: 31px;
+  margin-left: 177px;
+  p {
+    line-height: 1.5;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.smile__add-title {
+  margin-bottom: 41px;
+  font-family: $Philosopher;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.013em;
+}
+
+.smile__use {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 101px;
+}
+
+.smile__use-left {
+  position: relative;
+  width: 19.1%;
+  margin-left: 257px;
+  padding-top: 115px;
+  font-family: $Philosopher;
+  font-size: 20px;
+  font-weight: 700;
+  color: $red-300;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  &::before {
+    content: url("../img/svg/white-ellipse.svg");
+    position: absolute;
+    top: 71px;
+    left: -45px;
+    width: 117px;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+
+.smile__use-right {
+  position: relative;
+  width: 24.2%;
+  margin-right: 119px;
+  padding: 57px 73px 59px;
+  border: 1px solid $red-300;
+  border-radius: 15px 110px 15px 110px;
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  img {
+    position: absolute;
+    top: 26px;
+    left: -237px;
+  }
+}
+
+.smile__use-right-title {
+  margin-bottom: 17px;
+  font-family: $Philosopher;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.041em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+@media (max-width: 1279px) {
+
+  .smile {
+    padding-top: 40px;
+    .container {
+      padding: 0 10px;
+    }
+  }
+
+  .smile__name {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+
+  .smile__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .smile__wrap {
+    margin-bottom: 25px;
+  }
+
+  .smile__block {
+    position: relative;
+    max-width: 100%;
+    margin-left: 0;
+    p {
+      max-width: 100%;
+      margin-bottom: 51px;
+      padding-left: 37px;
+      padding-right: 5px;
+    }
+    img {
+      position: static;
+    }
+    .smile__leaf-1 {
+      position: absolute;
+      width: 17px;
+      top: 260px;
+      right: 29px;
+    }
+    .smile__leaf-2 {
+      position: absolute;
+      width: 55px;
+      top: 314px;
+      right: 17px;
+    }
+    .smile__leaf-3 {
+      position: absolute;
+      width: 59px;
+      top: 497px;
+      left: 2px;
+    }
+  }
+
+  .smile__add {
+    max-width: 100%;
+    margin-left: 37px;
+    padding-right: 37px;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .smile__use {
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+
+  .smile__use-left {
+    width: auto;
+    margin-left: 0;
+    margin-bottom: 158px;
+    padding-top: 28px;
+    padding-left: 46px;
+    padding-right: 32px;
+    &::before {
+      top: -16px;
+      left: 1px;
+    }
+  }
+
+  .smile__use-right {
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px 43px 47px;
+    img {
+      width: 175px;
+      top: -138px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .smile__use-right-title {
+    margin-bottom: 29px;
+  }
+
+  .smile__add-title {
+    margin-bottom: 21px;
+    font-size: 20px;
+  }
+
+}
+
+
+@media (max-width: 1023px) {
+
+  .smile__block {
+    p {
+      padding-left: 0;
+    }
+  }
+
+  .smile__title {
+    font-size: 20px;
+  }
+
+  .smile__add {
+    margin-left: 0;
+  }
+
+  .smile__use-right {
+    width: auto;
+    margin-right: 0;
+  }
+
+}

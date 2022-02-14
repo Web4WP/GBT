@@ -76,6 +76,22 @@
   box-shadow: 0 4px 24px rgba(250, 111, 111, 0.19);
 }
 
+@media (max-width: 1023px) {
+
+  .menu__follow {
+    bottom: 25%;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .menu__follow {
+    bottom: 15%;
+  }
+
+}
+
 @media (max-width: 374px) {
 
   .menu__follow {

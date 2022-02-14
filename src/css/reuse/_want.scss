@@ -1,0 +1,95 @@
+.want {
+  margin-bottom: 6px;
+}
+
+.want__wrap {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.want__left {
+  position: relative;
+  width: 47%;
+  img {
+
+  }
+  &::after {
+    content: url("../img/svg/faq-line.svg");
+    position: absolute;
+    bottom: 81px;
+    left: 259px;
+  }
+}
+
+.want__right {
+  width: 55%;
+  padding-top: 55px;
+  p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+.want__title {
+  margin-bottom: 35px;
+  font-family: $Philosopher;
+  font-size: 30px;
+  letter-spacing: 0.016em;
+  line-height: 1;
+  color: $red-700;
+  text-transform: uppercase;
+}
+
+.want__link {
+  max-width: 282px;
+  margin-top: 73px;
+}
+
+@media (max-width: 1279px) {
+
+
+}
+
+@media (max-width: 1023px) {
+
+  .want__left {
+    width: auto;
+    &::after {
+      bottom: 42px;
+      left: 252px;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .want__wrap {
+    flex-direction: column;
+  }
+
+  .want__left {
+    width: auto;
+    &::after {
+      display: none;
+    }
+  }
+
+  .want__right {
+    width: auto;
+    padding-top: 0;
+  }
+
+  .want__title {
+    font-size: 25px;
+  }
+
+  .want__link {
+    display: block;
+    margin: 30px auto 0;
+  }
+
+}

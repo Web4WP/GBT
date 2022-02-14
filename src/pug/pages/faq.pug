@@ -1,0 +1,237 @@
+extends ../common/layout
+
+block main
+  main
+    div.faq
+      div.faq__block
+        div.faq__row
+          div.container
+            div#v-pills-tab.faq__nav.nav.nav-pills(role="tablist")
+              button#tab-1.faq__btn-link.nav-link.active(data-bs-toggle="pill", data-bs-target="#tab-1-item", type="button", role="tab", aria-controls="tab-1-item", aria-selected="true") Здоровые зубы
+              button#tab-2.faq__btn-link.nav-link(data-bs-toggle="pill", data-bs-target="#tab-2-item", type="button", role="tab", aria-controls="tab-2-item", aria-selected="false") Дети
+              button#tab-3.faq__btn-link.nav-link(data-bs-toggle="pill", data-bs-target="#tab-3-item", type="button", role="tab", aria-controls="tab-3-item", aria-selected="false") Пародонтит, гингивит
+              button#tab-4.faq__btn-link.nav-link(data-bs-toggle="pill", data-bs-target="#tab-4-item", type="button", role="tab", aria-controls="tab-4-item", aria-selected="false") Беременность
+              button#tab-5.faq__btn-link.nav-link(data-bs-toggle="pill", data-bs-target="#tab-5-item", type="button", role="tab", aria-controls="tab-5-item", aria-selected="false") Аллергия
+              button#tab-6.faq__btn-link.nav-link(data-bs-toggle="pill", data-bs-target="#tab-6-item", type="button", role="tab", aria-controls="tab-6-item", aria-selected="false") Реставрации,виниры
+              button#tab-7.faq__btn-link.nav-link(data-bs-toggle="pill", data-bs-target="#tab-7-item", type="button", role="tab", aria-controls="tab-7-item", aria-selected="false") Импланты
+              button#tab-8.faq__btn-link.nav-link(data-bs-toggle="pill", data-bs-target="#tab-8-item", type="button", role="tab", aria-controls="tab-8-item", aria-selected="false") Отбеливание
+              button#tab-9.faq__btn-link.nav-link(data-bs-toggle="pill", data-bs-target="#tab-9-item", type="button", role="tab", aria-controls="tab-9-item", aria-selected="false") Системные заболевания
+              button#tab-10.faq__btn-link.nav-link(data-bs-toggle="pill", data-bs-target="#tab-10-item", type="button", role="tab", aria-controls="tab-10-item", aria-selected="false") Заболевания слизистой оболочки
+              button#tab-11.faq__btn-link.nav-link(data-bs-toggle="pill", data-bs-target="#tab-11-item", type="button", role="tab", aria-controls="tab-11-item", aria-selected="false") Ортодонические конструкции
+        div.container
+          div#v-pills-tabContent.faq__content.tab-content
+            div#tab-1-item.faq__tab.tab-pane.fade.show.active(role="tabpanel", aria-labelledby="tab-1")
+              div.faq__wrap
+                div.faq__left
+                  div.faq__name.block-name вопросы и ответы
+                  div.faq__title.block-title Здоровые зубы
+                  p Профессиональная гигиена полости рта необходима для обеспечения безупречной улыбки и поддержания зубов в здоровом состоянии.
+                  a.faq__btn.btn(href="clinic.html") Выбрать клинику
+                img(src="img/content/faq-photo-1.png", alt="")
+              div.faq__accordion
+                div#accordionExample.faq__accordion-wrap.accordion
+                  div.faq__item.accordion-item
+                    h2#headingOne.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapseOne", aria-expanded="true", aria-controls="collapseOne") Обработка Air flow вредна для эмали?
+                    div#collapseOne.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                      div.faq__body
+                        p <span>AirFlow</span> является оригинальной швейцарской технологией компании EMS. Все параметры давления воздуха, потока воды и порошка четко выверены таким образом, чтобы очистить зуб от биопленки и пищевого пигмента без вреда для поверхности, в том числе и у детей. Безопасность данной технологии подтверждена клиническими исследованиями и абсолютно безопасна как для твёрдых тканей (а в том числе эмали), так и для мягких тканей.
+                  div.faq__item.accordion-item
+                    h2#heading2.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse2", aria-expanded="true", aria-controls="collapseOne") Очень хочу вернуть себе лучезарную улыбку, но в интернете много разных рекомендаций. Бывают ли противопоказания?
+                    div#collapse2.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading3.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse3", aria-expanded="true", aria-controls="collapseOne") Всегда нужно обязательно проводить все этапы протокола GBT?
+                    div#collapse3.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading4.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse4", aria-expanded="true", aria-controls="collapseOne") Как часто нужно проходить процедуру профессиональной гигиены по протоколу GBT?
+                    div#collapse4.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading5.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse5", aria-expanded="true", aria-controls="collapseOne") Нужно соблюдать специальную диету после проведения процедуры профессиональной гигиены по протоколу GBT?
+                    div#collapse5.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading6.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse6", aria-expanded="true", aria-controls="collapseOne") Меня заинтересовала идея профессиональной гигиены, но в интернете очень много противоречивых отзывов и противопоказаний, а у меня десна не кровоточат, камней нет, но я курю и люблю крепкий чай, так что зубы покоричневели. Вопрос - кому верить?
+                    div#collapse6.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading7.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse7", aria-expanded="true", aria-controls="collapseOne") Я хожу к стоматологу довольно часто, хотя и боюсь, потому что меня так приучили родители, но после каждого визита у меня повышается давление, хотя я не гипертоник, и я выдерживаю только короткие процедуры. Можно ли мне проводить процедуру GBT?
+                    div#collapse7.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading8.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse8", aria-expanded="true", aria-controls="collapseOne") У меня электрическая зубная щетка, с тех пор как я начал ею пользоваться, зубы стали чище. Зачем мне GBT?
+                    div#collapse8.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading9.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse9", aria-expanded="true", aria-controls="collapseOne") Подруга посоветовала почистить зубы у стоматолога. Оказалось, что для этого применяются разные   порошки. Что и какие выбрать?
+                    div#collapse9.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading10.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse10", aria-expanded="true", aria-controls="collapseOne") Зачем окрашивать зубы перед чисткой?  Вдруг не удастся ее удалить.
+                    div#collapse10.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading11.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse11", aria-expanded="true", aria-controls="collapseOne") Если я приобрету состав для окрашивания биопленки, смогу ли я сам очистить свои зубы?
+                    div#collapse11.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading12.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse12", aria-expanded="true", aria-controls="collapseOne") Мне пришлось увидеть, как врач проводил профессиональную чистку зубов моей подруге. Скажите, может так случиться, что врачу не удастся убрать все окрашенные поверхности, и я останусь с синими зубами?
+                    div#collapse12.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading13.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse13", aria-expanded="true", aria-controls="collapseOne") Какие противопоказания к применению GBT известны?
+                    div#collapse13.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading14.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse14", aria-expanded="true", aria-controls="collapseOne") Года 2 назад мне снимали камни ультразвуком. Было больно, десны долго заживали. Понимаю, что процедуру нужно повторить, но боюсь. Могу надеяться, что GBT менее болезненно?
+                    div#collapse14.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+            div#tab-2-item.faq__tab.tab-pane.fade(role="tabpanel", aria-labelledby="tab-2")
+              div.faq__wrap
+                div.faq__left
+                  div.faq__name.block-name вопросы и ответы
+                  div.faq__title.block-title Дети
+                  p Профессиональная гигиена полости рта необходима для обеспечения безупречной улыбки и поддержания зубов в здоровом состоянии.
+                  a.faq__btn.btn(href="clinic.html") Выбрать клинику
+                img(src="img/content/faq-photo-1.png", alt="")
+              div.faq__accordion
+                div#accordionExample2.faq__accordion-wrap.accordion
+                  div.faq__item.accordion-item
+                    h2#headingOne2.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapseOne2", aria-expanded="true", aria-controls="collapseOne2") Обработка Air flow вредна для эмали?
+                    div#collapseOne2.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample2")
+                      div.faq__body
+                        p <span>AirFlow</span> является оригинальной швейцарской технологией компании EMS. Все параметры давления воздуха, потока воды и порошка четко выверены таким образом, чтобы очистить зуб от биопленки и пищевого пигмента без вреда для поверхности, в том числе и у детей. Безопасность данной технологии подтверждена клиническими исследованиями и абсолютно безопасна как для твёрдых тканей (а в том числе эмали), так и для мягких тканей.
+                  div.faq__item.accordion-item
+                    h2#heading22.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse22", aria-expanded="true", aria-controls="collapseOne") Очень хочу вернуть себе лучезарную улыбку, но в интернете много разных рекомендаций. Бывают ли противопоказания?
+                    div#collapse22.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample2")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading32.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse32", aria-expanded="true", aria-controls="collapseOne") Всегда нужно обязательно проводить все этапы протокола GBT?
+                    div#collapse32.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample2")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading42.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse42", aria-expanded="true", aria-controls="collapseOne") Как часто нужно проходить процедуру профессиональной гигиены по протоколу GBT?
+                    div#collapse42.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample2")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading52.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse52", aria-expanded="true", aria-controls="collapseOne") Нужно соблюдать специальную диету после проведения процедуры профессиональной гигиены по протоколу GBT?
+                    div#collapse52.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample2")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading62.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse62", aria-expanded="true", aria-controls="collapseOne") Меня заинтересовала идея профессиональной гигиены, но в интернете очень много противоречивых отзывов и противопоказаний, а у меня десна не кровоточат, камней нет, но я курю и люблю крепкий чай, так что зубы покоричневели. Вопрос - кому верить?
+                    div#collapse62.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample2")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading72.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse72", aria-expanded="true", aria-controls="collapseOne") Я хожу к стоматологу довольно часто, хотя и боюсь, потому что меня так приучили родители, но после каждого визита у меня повышается давление, хотя я не гипертоник, и я выдерживаю только короткие процедуры. Можно ли мне проводить процедуру GBT?
+                    div#collapse72.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample2")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading82.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse82", aria-expanded="true", aria-controls="collapseOne") У меня электрическая зубная щетка, с тех пор как я начал ею пользоваться, зубы стали чище. Зачем мне GBT?
+                    div#collapse82.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample2")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading92.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse9", aria-expanded="true", aria-controls="collapseOne") Подруга посоветовала почистить зубы у стоматолога. Оказалось, что для этого применяются разные   порошки. Что и какие выбрать?
+                    div#collapse92.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample2")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading102.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse102", aria-expanded="true", aria-controls="collapseOne") Зачем окрашивать зубы перед чисткой?  Вдруг не удастся ее удалить.
+                    div#collapse102.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample2")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading112.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse112", aria-expanded="true", aria-controls="collapseOne") Если я приобрету состав для окрашивания биопленки, смогу ли я сам очистить свои зубы?
+                    div#collapse112.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample2")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading122.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse122", aria-expanded="true", aria-controls="collapseOne") Мне пришлось увидеть, как врач проводил профессиональную чистку зубов моей подруге. Скажите, может так случиться, что врачу не удастся убрать все окрашенные поверхности, и я останусь с синими зубами?
+                    div#collapse122.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample2")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading132.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse132", aria-expanded="true", aria-controls="collapseOne") Какие противопоказания к применению GBT известны?
+                    div#collapse132.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample2")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+                  div.faq__item.accordion-item
+                    h2#heading142.faq__header.accordion-header
+                      button.faq__accordion-btn.accordion-button.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse142", aria-expanded="true", aria-controls="collapseOne") Года 2 назад мне снимали камни ультразвуком. Было больно, десны долго заживали. Понимаю, что процедуру нужно повторить, но боюсь. Могу надеяться, что GBT менее болезненно?
+                    div#collapse142.faq__collapse.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample2")
+                      div.faq__body
+                        p Абсолютных противопоказаний нет.  Не рекомендуется проводить процедуры при   воспалительных процессах в полости рта (стоматиты), ОРВИ, инфекционных заболеваний в стадии обострения, при получении химиотерапии.
+                        p Если вы принимаете препараты, разжижающие кровь, или страдаете заболеваниями, влияющими на свёртывание крови, обязательно предупредите об этом вашего стоматолога.  Возможно, потребуется дополнительная  консультация таких специалистов, как: кардиолог, гематолог и др.
+    include ../reuse/want

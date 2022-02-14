@@ -1,0 +1,148 @@
+.mission {
+  margin-bottom: 76px;
+  p {
+    width: 927px;
+    margin: 0 auto;
+    line-height: 1.5;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.mission__title {
+  margin-bottom: 45px;
+  padding-right: 31px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.mission__wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1010px;
+  margin: 75px auto 0;
+  img {
+    width: 50%;
+    padding-top: 21px;
+  }
+}
+
+.mission__left {
+  width: 34%;
+  padding-top: 39px;
+  padding-left: 140px;
+}
+
+.mission__left-text {
+
+  p {
+    position: relative;
+    width: 100%;
+    margin-bottom: 57px;
+    &:first-child {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -55px;
+        left: 0;
+        width: 1px;
+        height: 45px;
+        background: $red-400;
+      }
+    }
+  }
+}
+
+.mission__left-company {
+
+  img {
+    width: 102px;
+    margin-bottom: 18px;
+  }
+  p {
+    width: 100%;
+    font-family: $Philosopher;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    color: $black;
+  }
+}
+
+@media (max-width: 1279px) {
+
+
+
+}
+
+@media (max-width: 1023px) {
+
+  .mission {
+    .container {
+      padding: 0 10px;
+    }
+    p {
+      width: auto;
+    }
+  }
+
+  .mission__title {
+    margin-bottom: 18px;
+    padding-right: 0;
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .mission__wrap {
+    flex-direction: column;
+    margin: 52px auto 0;
+    img {
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  .mission__left {
+
+    width: auto;
+    padding-left: 0;
+    padding-right: 5px;
+  }
+
+  .mission__left-text {
+    padding-left: 80px;
+
+  }
+
+  .mission__left-company {
+    img {
+      display: inline-block;
+      width: 102px;
+      padding-top: 5px;
+    }
+    p {
+      padding-left: 2px;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .mission__wrap {
+    img {
+      width: 100%;
+    }
+  }
+
+  .mission__left-company {
+    img {
+      width: 102px;
+    }
+  }
+
+}

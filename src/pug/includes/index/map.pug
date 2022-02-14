@@ -9,17 +9,88 @@ div.map
         div.map__fluid-open
           span.map__fluid-open-text Открыто сейчас
           span.map__fluid-open-count <span>|</span> 30 клиник
+        div.map__fluid-tab
+          button.map__fluid-tab-btn.map__fluid-tab-btn_map.active Карта
+          button.map__fluid-tab-btn.map__fluid-tab-btn_map_decr Описание
       div.map__fluid-right
-        select
+        select(name="state")
           option(value="Выберите город") Выберите город
           option(value="Москва") Москва
           option(value="Санкт-Петербруг") Санкт-Петербруг
-    div.map__fluid-content
+    div.map__fluid-content.map__fluid-content_clinics.active
       div.map__fluid-aside
         ul.map__fluid-list
           li.map__fluid-item.active
             a.map__fluid-link(href="#")
               span.map__fluid-link-name Рудента
+              span.map__fluid-link-wrap
+                span.map__fluid-link-open открыто
+                span.map__fluid-link-time 8:00 — 20:00
+              span.map__fluid-link-address г. Москва, ул Островитянова, 56
+          li.map__fluid-item
+            a.map__fluid-link(href="#")
+              span.map__fluid-link-name Рудента
+              span.map__fluid-link-wrap
+                span.map__fluid-link-open открыто
+                span.map__fluid-link-time 8:00 — 20:00
+              span.map__fluid-link-address г. Москва, ул Островитянова, 56
+          li.map__fluid-item
+            a.map__fluid-link(href="#")
+              span.map__fluid-link-name Филигрань
+              span.map__fluid-link-wrap
+                span.map__fluid-link-open открыто
+                span.map__fluid-link-time 8:00 — 20:00
+              span.map__fluid-link-address г. Москва, ул Островитянова, 56
+          li.map__fluid-item
+            a.map__fluid-link(href="#")
+              span.map__fluid-link-name Рудента
+              span.map__fluid-link-wrap
+                span.map__fluid-link-open открыто
+                span.map__fluid-link-time 8:00 — 20:00
+              span.map__fluid-link-address г. Москва, ул Островитянова, 56
+          li.map__fluid-item
+            a.map__fluid-link(href="#")
+              span.map__fluid-link-name Рудента
+              span.map__fluid-link-wrap
+                span.map__fluid-link-open открыто
+                span.map__fluid-link-time 8:00 — 20:00
+              span.map__fluid-link-address г. Москва, ул Островитянова, 56
+          li.map__fluid-item
+            a.map__fluid-link(href="#")
+              span.map__fluid-link-name Рудента
+              span.map__fluid-link-wrap
+                span.map__fluid-link-open открыто
+                span.map__fluid-link-time 8:00 — 20:00
+              span.map__fluid-link-address г. Москва, ул Островитянова, 56
+          li.map__fluid-item
+            a.map__fluid-link(href="#")
+              span.map__fluid-link-name Рудента
+              span.map__fluid-link-wrap
+                span.map__fluid-link-open открыто
+                span.map__fluid-link-time 8:00 — 20:00
+              span.map__fluid-link-address г. Москва, ул Островитянова, 56
+          li.map__fluid-item
+            a.map__fluid-link(href="#")
+              span.map__fluid-link-name Рудента
+              span.map__fluid-link-wrap
+                span.map__fluid-link-open открыто
+                span.map__fluid-link-time 8:00 — 20:00
+              span.map__fluid-link-address г. Москва, ул Островитянова, 56
+          li.map__fluid-item
+            a.map__fluid-link(href="#")
+              span.map__fluid-link-name Рудента
+              span.map__fluid-link-wrap
+                span.map__fluid-link-open открыто
+                span.map__fluid-link-time 8:00 — 20:00
+              span.map__fluid-link-address г. Москва, ул Островитянова, 56
+      div.map__fluid-iframe
+        iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A3800e14a702013e79c2f4866c2a6840f8e28e8dadf9b2559d12c39542c5b52df&amp;source=constructor")
+    div.map__fluid-content.map__fluid-content_map
+      div.map__fluid-aside
+        ul.map__fluid-list
+          li.map__fluid-item.active
+            a.map__fluid-link(href="#")
+              span.map__fluid-link-name Филигрань
               span.map__fluid-link-wrap
                 span.map__fluid-link-open открыто
                 span.map__fluid-link-time 8:00 — 20:00

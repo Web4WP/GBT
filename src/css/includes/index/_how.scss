@@ -149,9 +149,7 @@
   }
 
   .how__03,
-  .how__video,
-  .how__main,
-  .how__tech {
+  .how__video, {
     width: auto;
   }
 
@@ -193,8 +191,9 @@
   }
 
   .how__main {
-    margin-left: 1px;
-    margin-right: 2px;
+    width: 66%;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 76px;
     padding: 56px 20px 66px 18px;
   }
@@ -210,7 +209,9 @@
   }
 
   .how__tech {
-    margin-right: 0;
+    width: 66%;
+    margin-right: auto;
+    margin-left: auto;
     padding: 53px 61px 64px 20px;
     &::after {
       content: url("../img/svg/how-line-2-mobile.svg");
@@ -237,6 +238,26 @@
 
   .how__video-title {
     text-align: right;
+  }
+
+  .how__main {
+    width: auto;
+    margin-left: 1px;
+    margin-right: 2px;
+    margin-bottom: 76px;
+  }
+
+  .how__tech {
+    width: auto;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 53px 61px 64px 20px;
+    &::after {
+      content: url("../img/svg/how-line-2-mobile.svg");
+      width: auto;
+      top: -78px;
+      left: 114px;
+    }
   }
 
 }

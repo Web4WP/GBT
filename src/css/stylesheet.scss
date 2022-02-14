@@ -4,6 +4,9 @@
 @import "lib/bootstrap/mixins";
 @import "lib/bootstrap/utilities";
 @import "lib/bootstrap/modal";
+@import "lib/bootstrap/nav";
+@import "lib/bootstrap/accordion";
+@import "lib/bootstrap/transitions";
 
 /* Common */
 @import "common/fonts";
@@ -11,8 +14,10 @@
 @import "common/header";
 @import "common/footer";
 
-/* Includes - Index */
+/* Includes - Reuse */
 @import "reuse/menu";
+@import "reuse/want";
+@import "reuse/modal";
 
 /* Includes - Index */
 @import "includes/index/banner";
@@ -26,3 +31,30 @@
 @import "includes/reviews/share";
 @import "includes/reviews/video";
 @import "includes/reviews/post";
+
+/* Includes - FAQ */
+@import "includes/faq/faq";
+
+/* Includes - History */
+@import "includes/history/idea";
+@import "includes/history/vertex";
+@import "includes/history/mission";
+
+/* Includes - Why */
+@import "includes/why/procedure";
+@import "includes/why/why-video";
+@import "includes/why/what";
+@import "includes/why/people";
+
+/* Includes - White */
+@import "includes/white/smile";
+@import "includes/white/white-video";
+@import "includes/white/go";
+
+/* Includes - Clinic */
+@import "includes/clinic/clinic";
+
+/* Includes - Action */
+@import "includes/action/gbt";
+@import "includes/action/biofilm";
+@import "includes/action/bio";

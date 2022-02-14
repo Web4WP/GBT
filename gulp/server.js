@@ -25,7 +25,7 @@ module.exports = function serve(cb) {
   gulp.watch('src/pug/**/*.pug', gulp.series(pug2Html))
   gulp.watch('src/css/**/*.scss', gulp.series(scss2Css))
   gulp.watch('src/css/lib/**/.css', gulp.series(copyCSS, readyReload))
-  gulp.watch('src/js/**/*.js', gulp.series(readyReload))
+  gulp.watch('src/js/**/*.js', gulp.series(copyJS, readyReload))
   gulp.watch('src/js/lib/**', gulp.series(copyJS, readyReload))
   gulp.watch('src/fonts', gulp.series(copyFonts, readyReload))
   gulp.watch('src/img/**/*.{gif,png,jpg,svg,webp,ico}', gulp.series(imgMin, readyReload))

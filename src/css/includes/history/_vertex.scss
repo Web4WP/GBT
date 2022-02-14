@@ -1,0 +1,124 @@
+.vertex {
+  margin-bottom: 75px;
+  padding-top: 100px;
+  background: url("../img/svg/history-bg-line.svg") left center no-repeat;
+  background-size: cover;
+}
+
+.vertex__wrap {
+  margin-bottom: 30px;
+  p {
+    max-width: 920px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+}
+
+.vertex__name {
+  margin-bottom: 25px;
+  padding-right: 33px;
+  text-transform: uppercase;
+  text-align: center;
+  &::before {
+    display: none;
+  }
+}
+
+.vertex__title {
+  margin-bottom: 52px;
+  padding-right: 66px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.vertex__flex {
+  display: flex;
+  padding: 0 120px 0 205px;
+  img {
+    width: 52.5%;
+    margin-right: 40px;
+  }
+}
+
+.vertex__text {
+  width: 32%;
+  padding-top: 108px;
+  p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    span {
+      font-weight: 700;
+    }
+    &:first-child {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -55px;
+        left: 0;
+        width: 1px;
+        height: 45px;
+        background: $red-400;
+      }
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+
+  .vertex__flex {
+    padding: 0 10px;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .vertex {
+    margin-bottom: 60px;
+    padding-top: 94px;
+    .container {
+      padding: 0 10px;
+    }
+  }
+
+  .vertex__name {
+    margin-bottom: 19px;
+    padding-left: 2px;
+    text-align: left;
+  }
+
+  .vertex__title {
+    margin-bottom: 26px;
+    padding-left: 0;
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .vertex__wrap {
+    margin-bottom: 17px;
+  }
+
+  .vertex__flex {
+    flex-direction: column;
+    padding: 0;
+    img {
+      width: auto;
+      margin-right: 0;
+    }
+  }
+
+  .vertex__text {
+    width: auto;
+    padding-top: 91px;
+    padding-left: 80px;
+    padding-right: 10px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+
+
+}

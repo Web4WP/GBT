@@ -1,0 +1,109 @@
+.gbt {
+  margin-bottom: 75px;
+  padding-top: 63px;
+  background: url("../img/content/action-bg.png") left top no-repeat;
+  background-size: cover;
+}
+
+.gbt__wrap {
+  position: relative;
+  max-width: 740px;
+  margin: 0 auto;
+  p {
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    span {
+      font-weight: 700;
+    }
+  }
+  &::before {
+    content: url("../img/svg/action-ellipse.svg");
+    position: absolute;
+    top: 13px;
+    left: -116px;
+  }
+}
+
+.gbt__title {
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 41px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: $Philosopher;
+  font-size: 30px;
+  text-align: center;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 17px;
+    background: $red-400;
+    transform: translateX(-50%);
+  }
+}
+
+.gbt__link {
+  display: inline-block;
+  margin-bottom: 28px;
+  img {
+
+  }
+}
+
+.gbt__how {
+  margin-bottom: 11px;
+  font-size: 20px;
+  font-weight: 700;
+  color: $red-700;
+  line-height: 1;
+  text-align: center;
+}
+
+.gbt__watch {
+  margin-bottom: 54px;
+  color: #6c757d;
+  text-align: center;
+}
+
+@media (max-width: 1279px) {
+
+
+
+}
+
+@media (max-width: 1023px) {
+
+  .gbt {
+    padding-top: 41px;
+    .container {
+      padding: 0 10px;
+    }
+  }
+
+  .gbt__link {
+    margin-bottom: 16px;
+  }
+
+  .gbt__watch {
+    margin-bottom: 57px;
+  }
+
+  .gbt__wrap {
+    p {
+      max-width: 100%;
+      padding: 0 3px;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+
+
+}

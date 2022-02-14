@@ -1,0 +1,18 @@
+div#callback.modal.fade.modal-window.callback(tabindex="-1" aria-hidden="true")
+  div.callback__dialog.modal-dialog.modal-dialog-centered
+    div.callback__content.modal-content
+      button.callback__close.btn-close(type="button", data-bs-dismiss="modal", aria-label="Close")
+      div.callback__wrap.modal-body
+        div.callback__title Оставьте свой отзыв о процедуре GBT
+        div.callback__form
+          form(action="/", method="post")
+            div.callback__row
+              input.callback__input(type="text", placeholder="Ваше Имя")
+              input.callback__input(type="text", placeholder="Ваш возраст")
+            div.callback__row
+              input.callback__input(type="tel", placeholder="Телефон")
+              input.callback__input(type="text", placeholder="Город")
+            input.callback__input.callback__input_email(type="email", placeholder="e-mail:")
+            textarea.callback__textarea(placeholder="Ваш отзыв о процедуре")
+            div.callback__privacy Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь <a href="#">c политикой конфиденциальности</a>
+            input.callback__submit.btn(type="submit", value="Отправить")

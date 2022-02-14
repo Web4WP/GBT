@@ -3,7 +3,7 @@ const imagemin = require('gulp-imagemin');
 
 module.exports = function imageMin() {
   return gulp.src("src/img/**/*.{gif,png,jpg,svg,webp,ico}")
-    .pipe(imagemin([
+    /*.pipe(imagemin([
       imagemin.gifsicle({ interlaced: true }),
       imagemin.mozjpeg({
         quality: 85,
@@ -16,6 +16,6 @@ module.exports = function imageMin() {
           { cleanupIDs: false }
         ]
       })
-    ]))
+    ]))*/
     .pipe(gulp.dest("build/img"))
 }

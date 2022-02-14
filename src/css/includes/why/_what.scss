@@ -1,0 +1,245 @@
+.what {
+
+}
+
+.what__wrap {
+  max-width: 661px;
+  margin: 0 auto;
+  p {
+    max-width: 367px;
+    margin: 0 auto 53px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.what__title {
+  margin-bottom: 53px;
+  font-family: $Philosopher;
+  font-size: 40px;
+  line-height: 1.2;
+  color: $red-700;
+  letter-spacing: 0.011em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.what__flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+  font-size: 20px;
+  ul {
+    width: 46%;
+    padding-top: 5px;
+    font-weight: 700;
+    li:not(:last-child) {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.what__flex-left {
+  width: 44%;
+  padding-right: 40px;
+  text-align: right;
+  line-height: 1.5;
+  border-right: 1px solid $red-300;
+  span {
+    font-weight: 700;
+  }
+}
+
+.what__result {
+  margin-bottom: 24px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1;
+  color: #6c757d;
+  letter-spacing: 0.27em;
+  text-align: center;
+}
+
+.what__text {
+  max-width: 367px;
+  margin: 0 auto 39px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.what__disease {
+  position: relative;
+  max-width: 511px;
+  margin: 0 auto 16px;
+  img {
+    display: block;
+    margin: -12px auto 0;
+  }
+}
+
+.what__disease-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: $red-300;
+  line-height: 1;
+  text-align: center;
+}
+
+.what__disease-text {
+  position: absolute;
+  max-width: 100px;
+  font-family: $Philosopher;
+  color: #6c757d;
+  line-height: 1.2;
+  &_1 {
+    top: 102px;
+    left: 78px;
+  }
+  &_2 {
+    top: 102px;
+    right: 62px;
+  }
+  &_3 {
+
+    top: 157px;
+    left: -4px;
+    text-align: right;
+  }
+  &_4 {
+    top: 157px;
+    right: -4px;
+  }
+  &_5 {
+    max-width: 80px;
+    top: 238px;
+    left: 49px;
+    text-align: right;
+  }
+  &_6 {
+    top: 238px;
+    right: 27px;
+  }
+}
+
+@media (max-width: 1279px) {
+
+
+
+}
+
+@media (max-width: 1023px) {
+
+  .what {
+    .container {
+      padding: 0 10px;
+    }
+  }
+
+  .what__wrap {
+    p {
+      max-width: 100%;
+      margin: 0 auto 15px;
+      padding-right: 20px;
+      font-size: 14px;
+      text-align: left;
+    }
+  }
+
+  .what__title {
+    margin-bottom: 50px;
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .what__flex {
+    flex-direction: column;
+    margin-bottom: 76px;
+    ul {
+      width: auto;
+    }
+  }
+
+  .what__flex-left {
+    width: auto;
+    margin-bottom: 9px;
+    padding-right: 0;
+    border-right: none;
+    text-align: left;
+  }
+
+  .what__result {
+    text-align: left;
+  }
+
+  .what__text {
+    max-width: 100%;
+    margin: 0 auto 71px;
+    padding-right: 60px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .what__disease {
+    margin: 0 auto 75px;
+    img {
+      width: 300px;
+      margin: 0 auto 0;
+      padding-right: 16px;
+    }
+  }
+
+  .what__disease-title {
+    font-size: 16px;
+  }
+
+  .what__disease-text_1 {
+    top: 73px;
+    left: 43px;
+  }
+
+  .what__disease-text_2 {
+    top: 73px;
+    right: 53px;
+  }
+
+  .what__disease-text_3 {
+    top: 126px;
+    left: 0;
+  }
+
+  .what__disease-text_4 {
+    top: 125px;
+    right: -2px;
+  }
+
+  .what__disease-text_5 {
+    top: 207px;
+    left: 15px;
+  }
+
+  .what__disease-text_6 {
+    top: 207px;
+    right: 19px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .what__disease {
+
+    img {
+      width: 214px;
+      margin: 40px auto 0;
+      padding-right: 16px;
+    }
+  }
+
+}

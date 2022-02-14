@@ -49,6 +49,10 @@
     }
   }
 
+  .share__wrap {
+    margin-bottom: 100px;
+  }
+
   .share__left {
     margin-left: 100px;
   }
@@ -75,6 +79,7 @@
   .share__wrap {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 75px;
   }
 
   .share__left {
@@ -97,6 +102,14 @@
 
   .share__btn {
     margin-left: 0;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .share__wrap {
+    margin-bottom: 0;
   }
 
 }
